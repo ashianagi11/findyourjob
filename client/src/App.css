@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0; 
+  font-family: 'Raleway', sans-serif;
+}
+
+#about {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  display: flex; 
+  justify-content: space-between;
+  padding: 15px;
+}
+
+h4 {
+  margin: 0;
+}
+
+span {
+  color: red;
+}
+
+h1 .tech{
+  font-size: 45px;
+}
+
+.container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.content {
+  width: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 70px;
+  height: 28px;
+  border-radius: 0 20px 0 0;
+  align-self: flex-end;
+  background-color: white; 
+  border: none; 
+}
+
+input {
+  border-radius: 20px 0 0 0;
+  height: 26px;
+  width: 300px;
+  padding-left: 8px;
+  border: none; 
+}:focus {
+  outline: none;
+}
+
+.matchedResults {
+  border-radius: 0 0 20px 20px;
+  background-color: white;
+  padding: 10px;
+  color: black;
+}
+
+.skills {
+  display: flex; 
+  flex-direction: column;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+#skills {
+  display: inline;
+  margin: 3px;
+}
+
+.resultContainer {
+  display: flex; 
+  margin-top: 10px;
+}
+
+.disclaimer {
+  display: flex;
+  flex-direction: column; 
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+h4, h2 {
+  max-width: 200px;
+  margin-left: 15px;
+}
+
+.results {
+  flex-grow: 4; 
+  padding-left: 200px;
+  line-height: 25px;
+}
+#jobsResults:hover {
+  color: green;
+}
+
+h3 {
+  margin: 3px;
+}
+
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.output {
+  border: 2px solid white; 
+  border-radius: 0 0 24px 24px;
+}

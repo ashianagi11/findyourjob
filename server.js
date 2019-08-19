@@ -53,7 +53,10 @@ app.get("/api/matched", function(req, res){
 
 app.get('/api/results/:skillname', function(req, res){
     mysqlConnection.query(
-        'SELECT matched.skill_id, skill_name, matched.jobs_id, jobs_name FROM skills INNER JOIN matched ON skills.skill_id = matched.skill_id INNER JOIN jobs ON jobs.jobs_id = matched.jobs_id WHERE skill_name=?', 
+        'SELECT matched.skill_id, skill_name, matched.jobs_id,\
+         jobs_name FROM skills INNER JOIN matched ON \
+         skills.skill_id = matched.skill_id INNER JOIN jobs \
+         ON jobs.jobs_id = matched.jobs_id WHERE skill_name=?', 
         [req.params.skillname],  
         (err, rows, field) => {
             if(!err) {

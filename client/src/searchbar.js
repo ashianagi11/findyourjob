@@ -92,13 +92,13 @@ class Search extends React.Component {
     //sorts the job results from most common to least
     compressArray(results) {
             var jobResults = [];
-            var copy = results.slice(0);
+            var copy = results.slice(0); 
             for (var i = 0; i < results.length; i++) {
                 var jobCount = 0;	
-                for (var w = 0; w < copy.length; w++) {
-                    if (results[i] === copy[w]) {
+                for (let j = 0; j < copy.length; j++) {
+                    if (results[i] === copy[j]) {
                         jobCount++;
-                        delete copy[w];
+                        delete copy[j];
                     }
                 }
                 if (jobCount > 0) {

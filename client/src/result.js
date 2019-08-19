@@ -17,7 +17,6 @@ const Result = ({compressArray, results}) => {
                 </ul>
             </div>
         </div>
-    
     )
 }
 
